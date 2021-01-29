@@ -6,7 +6,6 @@ $meSql = "SELECT food.id_food,food.food_size,food.FilesName,food.food_name,food.
 INNER JOIN food ON orders_detail.id_food = food.id_food
 WHERE id_orders =$id_order";
 $meQuery = mysqli_query($meConnect,$meSql);
-$meResult = mysqli_fetch_array($meQuery);
 
 
 $action = isset($_GET['a']) ? $_GET['a'] : "";
